@@ -492,12 +492,11 @@ SPEC_SERVICE_TRANS_MAP: dict = {
     'fan': {
         'required': {
             'properties': {
-                'on': {'read', 'write'},
-                'fan-level': {'read', 'write'}
+                'on': {'read', 'write'}
             }
         },
         'optional': {
-            'properties': {'mode', 'horizontal-swing', 'wind-reverse'}
+            'properties': {'fan-level', 'mode', 'horizontal-swing', 'wind-reverse'}
         },
         'entity': 'fan'
     },
