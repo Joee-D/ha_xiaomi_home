@@ -496,7 +496,7 @@ SPEC_SERVICE_TRANS_MAP: dict = {
             }
         },
         'optional': {
-            'properties': {'fan-level', 'mode', 'horizontal-swing', 'wind-reverse'}
+            'properties': {'fan-level', 'horizontal-swing', 'wind-reverse'}
         },
         'entity': 'fan'
     },
