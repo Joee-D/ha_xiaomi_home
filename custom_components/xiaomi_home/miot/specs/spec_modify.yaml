@@ -163,12 +163,23 @@ urn:miot-spec-v2:device:airer:0000A00D:hyd-lyjpro:1:
   prop.2.11:
     expr: (100-src_value)
 urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj5:1:
+  prop.2.2:
+    value-list:
+      - value: 0
+        description: pause
+      - value: 1
+        description: down
+      - value: 2
+        description: up
   prop.2.3:
     value-range:
     - 0
+    - 2
     - 1
-    - 1
+    expr: (src_value - 1)
 urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj5:2: urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj5:1
+urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj1:1: urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj5:1
+urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj1:2: urn:miot-spec-v2:device:airer:0000A00D:hyd-znlyj5:1
 urn:miot-spec-v2:device:airer:0000A00D:mrbond-m1t:1:
   prop.2.3:
     name: current-position-a
